@@ -8,12 +8,11 @@ public class Main {
     public static void main(String[] args) {
 
         try (Scanner sc = new Scanner(new FileReader("products.txt"))) {
-            System.out.printf("%-14s%-6s%-12s%-10s%-5s%n", "Наименование", "Цена", "Количество", "Стоимость","Итого");
+            System.out.printf("%-14s%-6s%-12s%-10s%n", "Наименование", "Цена", "Количество", "Стоимость");
             System.out.println("-----------------------------------------------------");
 
             double result = 0;
             double res = 0;
-            double r=0;
 
             while (sc.hasNext()) {
 
